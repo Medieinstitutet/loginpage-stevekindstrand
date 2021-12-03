@@ -14,20 +14,24 @@
     <main>
 
         <form id="loginForm">
-            <p class="logReg">Logga in</p>
-            <input placeholder="Användarnamn">
-            <input placeholder="Lösenord">
-            <button>Registrera</button>
-            <p>Inte registrerad?<a id="linkLog"  href="#"> Registrera dig</a></p>
+            <p class="heading">Logga in</p>
+            <input id="loginInput" type="text" placeholder="Användarnamn">
+            <input id="loginPwInput" type="password" placeholder="Lösenord">
+            <button id="loginBtn">Logga in</button>
+            <p>Inte registrerad?<a id="linkLogin"  href="#"> Registrera dig</a></p>
         </form>
 
         <form id="registerForm">
-            <p class="logReg">Registrera dig</p>
-            <input placeholder="Användarnamn">
-            <input placeholder="Lösenord">
-            <button>Spara</button>
+            <p class="heading">Registrera dig</p>
+            <input id="regInput" placeholder="Användarnamn">
+            <input id="regPwInput" placeholder="Lösenord">
+            <button id="regBtn">Registrera dig</button>
             <p>Redan registrerad?<a id="linkReg" href="#"> Logga in</a></p>
         </form>
+
+        <div id="divLoggedIn"></div>
+
+        <div id="divTryAgain"></div>
 
     </main>
     <footer><h3>Footer</h3></footer>
