@@ -1,0 +1,1 @@
+registerForm.style.display = "none";
