@@ -2,7 +2,7 @@
 
 Det finns tre användare:
 
-username: janne
+username: janne<br>
 password: test
 
 username: admin
