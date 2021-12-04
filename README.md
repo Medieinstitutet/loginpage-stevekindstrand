@@ -1,7 +1,5 @@
 # loginpage-stevekindstrand
 
-Det finns tre användare:
-
 username: janne<br>
 password: test
 
