@@ -78,10 +78,15 @@ loginBtn.addEventListener("click", (event)=>{
             divLoggedIn.append(logoutBtn);
             logoutBtn.innerHTML = "Logga ut";
 
-            localStorage.setItem("username", usernameInput); //Visar inloggad användare i local storage
-            localStorage.getItem("divLoggedIn") == usernameInput
-            // let userName = localStorage.getItem("username"); //Hämtar inloggad användare från local storage till console
-            // console.log(userName);
+            //local storage
+            localStorage.setItem("username", usernameInput); //Visar inloggad användare (användarnamn) i local storage
+            localStorage.setItem("password", passwordInput); //Visar inloggad användare (lösenord) i local storage
+
+            let userName = localStorage.getItem("username"); //Hämtar inloggad användare (användarnamn) från local storage till console
+            let userPassword = localStorage.getItem("password"); //Hämtar inloggad användare (lösenord) från local storage till console
+            console.log(userName);
+            console.log(userPassword);
+            //
 
             return;
 
