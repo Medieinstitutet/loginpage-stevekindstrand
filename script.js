@@ -68,20 +68,20 @@ loginBtn.addEventListener("click", (event)=>{
     
     for(i = 0; objUsers.length; i++){
         if(usernameInput == objUsers[i].usernameInput && passwordInput == objUsers[i].passwordInput){
-            
+
             loginForm.style.display = "none";
             divLoggedIn.style.display = "flex";
-  
+
             divLoggedIn.append(h2);
             h2.innerHTML = "Välkommen, " + usernameInput + "!<br><br>";
-        
+
             divLoggedIn.append(logoutBtn);
             logoutBtn.innerHTML = "Logga ut";
 
             localStorage.setItem("username", usernameInput); //Visar inloggad användare i local storage
-
-            let userName = localStorage.getItem("username"); //Hämtar inloggad användare från local storage till console
-            console.log(userName);
+            localStorage.getItem("divLoggedIn") == usernameInput
+            // let userName = localStorage.getItem("username"); //Hämtar inloggad användare från local storage till console
+            // console.log(userName);
 
             return;
 
@@ -92,7 +92,7 @@ loginBtn.addEventListener("click", (event)=>{
             divTryAgain.append(h2);
             h2.innerHTML = "Fel användarnamn eller lösenord, försök igen<br><br>";
         
-           divTryAgain.append(logoutBtn);
+            divTryAgain.append(logoutBtn);
             logoutBtn.innerHTML = "försök igen";
         }};
     });
